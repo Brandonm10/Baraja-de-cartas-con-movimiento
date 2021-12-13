@@ -1,0 +1,223 @@
+body{
+    background-color: lightgreen;
+    animation-name: fondo;
+	animation-duration: 4s;
+}
+.carta{
+    position: absolute;
+    height: 200px;
+    width: 130px;
+    background-color: rgb(230,230,230);
+    border-radius: 10px;
+    border: black 2px solid;
+}
+.numeropalo{
+    font-size: 25px;
+}
+.numeropalo_invertido{
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 0px;
+    right:0px;
+}
+
+
+#A{
+    color: red;
+    animation-name: A;
+	animation-duration: 5s;
+    z-index: 1;
+}
+
+
+.figura_1{
+    position: absolute;
+    font-size: 80px;
+}
+#A_1{
+    left: 25px;
+}
+
+
+#treboles7{
+    animation-name: treboles7;
+	animation-duration: 5s;
+    z-index: 4;
+}
+
+
+.figura_2{
+    position: absolute;
+    font-size: 40px;
+}
+#treboles7_1{
+    left: 22px;
+    top: 15px;
+}
+#treboles7_2{
+    left: 66px;
+    top: 15px;
+}
+#treboles7_3{
+    left: 44px;
+    top: 50px;
+}
+#treboles7_4{
+    left: 22px;
+    top: 85px;
+}
+#treboles7_5{
+    left: 66px;
+    top: 85px;
+}
+#treboles7_6{
+    left: 22px;
+    top: 130px;
+    transform: rotate(180deg);
+}
+#treboles7_7{
+    left: 66px;
+    top: 130px;
+    transform: rotate(180deg);
+}
+
+
+#corazones6{
+    color: red;
+    animation-name: corazones6;
+	animation-duration: 5s;
+    z-index: 3;
+}
+
+
+.figura_3{
+    position: absolute;
+    font-size: 45px;
+}
+#corazones6_1{
+    left: 22px;
+    top: 15px;
+}
+#corazones6_2{
+    left: 66px;
+    top: 15px;
+}
+#corazones6_3{
+    left: 22px;
+    top: 72px;
+}
+#corazones6_4{
+    left: 66px;
+    top: 72px;
+}
+#corazones6_5{
+    left: 22px;
+    top: 125px;
+    transform: rotate(180deg);
+}
+#corazones6_6{
+    left: 66px;
+    top: 125px;
+    transform: rotate(180deg);
+}
+
+
+#picas4{
+    animation-name: picas4;
+	animation-duration: 5s;
+    z-index: 2;
+}
+
+
+.figura_4{
+    position: absolute;
+    font-size: 45px;
+}
+#picas4_1{
+    left: 20px;
+    top: 15px;
+}
+#picas4_2{
+    left: 70px;
+    top: 15px;
+}
+#picas4_3{
+    left: 20px;
+    top: 125px;
+    transform: rotate(180deg);
+}
+#picas4_4{
+    left: 70px;
+    top: 125px;
+    transform: rotate(180deg);
+}
+
+@keyframes fondo{
+	from {background-color: lightgreen;}
+	to {background-color: green;}
+}
+
+
+@keyframes A{
+	0% {top: 0;
+		left: 0;}
+	
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+	left: 510px;
+	top: 190px;
+	transform: rotate(-15deg);
+		z-index: 1;
+	}
+
+
+}
+
+
+@keyframes picas4{
+	0% {top: 0;
+		left: 0;}
+		
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		left: 535px;
+	top: 200px;
+    transform: rotate(0deg);
+		z-index: 2;
+	}
+
+}
+@keyframes corazones6{
+	0% {top: 0;
+		left: 0;}
+	
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		left: 550px;
+	top: 210px;
+	transform: rotate(10deg);
+		z-index: 3;
+	}
+}
+
+    @keyframes treboles7{
+        0% {top: 0;
+            left: 0;}
+            
+        50% {
+            transform: rotate(180deg);
+        }
+        100% {
+            left: 565px;
+        top: 225px;
+        transform: rotate(20deg);
+            z-index: 4;
+    
+        }
+    }    
